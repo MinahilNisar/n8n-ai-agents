@@ -1,3 +1,97 @@
-git add .
-git commit -m "Add AI Age Prediction Agent"
-git push
+# 🤖 AI Chat & Age Prediction Agent
+
+An AI Agent built with **n8n** and **Google Gemini** that can chat with users and predict a person's age using the **Agify API**.
+
+---
+
+## 📌 Project Overview
+
+This project demonstrates how an AI Agent can use an external API through the **HTTP Request Tool** in n8n.
+
+Instead of relying only on the LLM's knowledge, the agent intelligently decides when to call an API, extracts the required information from the user's prompt, and returns a natural language response.
+
+---
+
+## 🚀 Features
+
+- 💬 AI Chat using Google Gemini
+- 🌐 HTTP Request Tool integration
+- 🧠 Automatic tool calling
+- 🔍 Name extraction from user prompts
+- 📊 Live age prediction using Agify API
+- 🤖 Natural language responses
+
+---
+
+## 🏗️ Workflow Architecture
+
+```text
+When Chat Message Received
+        │
+        ▼
+    AI Agent
+    ├── Google Gemini Chat Model
+    └── HTTP Request Tool
+            │
+            ▼
+        Agify API
+```
+
+---
+
+## 🛠 Technologies Used
+
+- n8n Cloud
+- Google Gemini
+- HTTP Request Tool
+- Agify API
+- REST API
+- JSON
+
+---
+
+## 💡 Example Prompts
+
+```
+Predict the age of Ahmed.
+```
+
+```
+How old is someone named Sarah?
+```
+
+```
+Estimate Ali's age.
+```
+
+---
+
+## 📚 What I Learned
+
+- What AI Agents are
+- Tool Calling
+- HTTP Request Tool
+- REST APIs
+- GET Requests
+- Query Parameters
+- JSON Responses
+- Prompt-based parameter extraction
+
+---
+
+## 🎯 Future Improvements
+
+- Add Conversation Memory
+- Add Weather API
+- Connect Google Calendar
+- Connect Gmail
+- Connect Google Sheets
+- Build a Multi-Tool AI Agent
+
+---
+
+## 👩‍💻 Author
+
+**Minahil Nisar**
+
+Computer Science Student | Learning AI Agents & Automation with n8n
